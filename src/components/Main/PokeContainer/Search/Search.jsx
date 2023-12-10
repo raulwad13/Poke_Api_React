@@ -1,26 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const Search = ({add}) => {
+const Search = ({ add }) => {
   const [inputValue, setPokemon] = useState("");
 
   const handleChange = (e) => {
     setPokemon(e.target.value);
   };
 
-  const handleSubmit = (e)=>{
-    e.preventDefault()
-    add(inputValue)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    add(inputValue);
+    setPokemon("");
+  };
 
-  }
-
-
+ 
   return (
+    <>
     <div>
       <form onSubmit={handleSubmit}>
         <input type="text" value={inputValue} onChange={handleChange} />
-        <button>Añadir Pokemon</button>
+        <button type="submit">Añadir Pokemon</button>
       </form>
     </div>
+    
+    </>
   );
 };
 

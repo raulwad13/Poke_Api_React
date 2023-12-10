@@ -1,0 +1,10 @@
+@import '../utils/variable.scss';
+@import '../utils/mixins.scss';
+
+main{
+    background-color: $green;
+    min-height: 83vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

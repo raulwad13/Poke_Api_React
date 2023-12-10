@@ -1,0 +1,87 @@
+/* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Estilos para el contenedor principal */
+div {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+/* Estilos para el componente de búsqueda */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  input {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+/* Estilos para el componente de la lista de Pokémon */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Estilos para la tarjeta de Pokémon */
+section{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase; 
+
+
+  img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 10px;
+  }
+
+  /* Establece el color de fondo dependiendo del tipo de Pokémon */
+  &.fire {
+    background-color: #fd7d24;
+  }
+
+  &.water {
+    background-color: #3498db;
+  }
+
+}
