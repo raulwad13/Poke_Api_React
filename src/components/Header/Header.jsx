@@ -1,11 +1,10 @@
 import React from "react";
-import { Routes } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
 
-  <img src="https://i.gifer.com/5IPv.gif"/>
+  <header className="site-header"><h1>Pokédex React</h1><p>Explora Pokémon con React y PokéAPI</p></header>
     </div>
   );
 };
